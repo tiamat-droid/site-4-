@@ -1,0 +1,466 @@
+
+https://uiverse.io/
+
+genero: 
+Romance.
+Mistério.
+Fantasia 
+Ficção Científica.
+Suspense 
+]Terror.
+Jovem Adulto.
+
+
+
+
+carroussel
+html
+main
+
+<section id="casa da minha paz">
+<h1><STRONG><i>
+
+        </i></STRONG></h1>
+<div class="carousel">
+    <span id="item-1"></span>
+    <span id="item-2"></span>
+    <span id="item-3"></span>
+    <span id="item-4"></span>
+    <hr>
+    <div class="casousel-item item-1">
+        <a href="#item-3" class="prev arrow"></a>
+        <a href="#item-2" class="next arrow"></a>
+    </div>
+
+    <div class="casousel-item item-2">
+        <a href="#item-1" class="prev arrow"></a>
+        <a href="#item-3" class="next arrow"></a>
+    </div>
+
+    <div class="casousel-item item-3">
+        <a href="#item-2" class="prev arrow"></a>
+        <a href="#item-1" class="next arrow"></a>
+    </div>
+
+
+    //////////////////////////////////////////////////
+
+    CSS 
+
+
+    .carousel{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      width: 80%; /* Ajuste conforme necessário */
+      max-width: 1150px;
+      height: 750px;
+      position: relative;
+      border: solid 0px #ffffff;
+      padding-left: 20%;
+    }  
+
+    .casousel-item{
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right: 0;
+      padding: 25px 50px;
+      opacity:0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .arrow{
+      border: solid #24e2e5;
+      border-width: 0 6px 6px 0;
+      display: inline-block;
+      padding: 15px;
+
+    }
+
+    .prev{
+      top: 50%;
+      left:30px;
+      position: absolute;
+      transform: translateY(-50%) rotate(135deg);
+    }
+
+    .next{
+      top: 50%;
+      right: 30px;
+      position: absolute;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+
+    [id^="item"]{
+      display: none;
+    }
+
+    .item-1{
+      z-index: 2;
+      opacity: 1;
+      background: url(novo/emi.png);
+      background-size: cover;
+    }
+
+    .item-2{
+      background: url("novo/alice.jpg");
+      background-size: cover;
+    }
+    .item-3{
+      background: url("webp/acotar.webp");
+      background-size: cover;
+    }
+
+
+    *:target~.item-1{
+      opacity: 1;
+    }
+    #item-2:target~.item-2,
+    #item-3:target~.item-3{ 
+      z-index: 3;
+      opacity: 1;
+    }
+
+
+    //////////////main e o footer/////
+
+
+     <p> conteúdo da página</p>
+            </section>
+
+            <section id="site">
+                <h2> site</h2>
+                <p>talvez algumas informações sobre o site </p>
+            </section>
+
+            <section id="é isso">
+                <h2>é isso</h2>
+                <p> aaaah saco</p>
+            </section>
+
+        </main>
+        <!--rodapé-->
+        <footer>
+
+            <div class="rodapé">
+                <h3> vai à merda</h3>
+
+                <ul>
+                    <li><a href="pv">política de privacidade</a></li>
+                    <li><a href="link do discord">termos de uso</a></li>
+                    <li><a href="link do twitter">suporte</a></li>
+                </ul>
+
+            </div>
+
+            <div class="rodapé">
+                <h3> vai dar merda</h3>
+                <ul>
+                    <li><a href="link do facebook">FACEBOOK</a></li>
+                    <li><a href="link do discord">DISCORD</a></li>
+                    <li><a href="link do twitter">TWITTER</a></li>
+                    <li><a href="link do youtube">YOUTUBE</a></li>
+                </ul>
+
+            </div>
+            <p>&copy; 2024</p>
+        </footer>
+
+
+
+
+    </body>
+
+    </html>
+
+
+
+
+    //////css main e o footer/////
+
+
+
+    /* Estilos para a seção principal */
+      main {
+        margin-left: 220px; /* Margem à esquerda para espaço do menu */
+        padding: 50px 10PX; /* Preenchimento interno */
+        flex: 1; /* Permite que o main cresça para ocupar o espaço restante  */
+      }
+     * { box-sizing: border-box; }
+
+     .slideshow-container {
+         position: relative;
+         max-width: 1000px;
+         margin: auto;
+         box-shadow: 10px 6px linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+     }
+
+     .slide {
+         display: none;
+     }
+
+     img { vertical-align: middle; }
+
+     .text {
+         color: #f2f2f2;
+         font-size: 20px;
+         padding: 8px 12px;
+         position: absolute;
+         bottom: 40px;
+         width: 100%;
+         text-align: center;
+         text-shadow: 2px 2px 5px yellow;
+     }
+
+     .prev, .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         padding: 16px;
+         margin-top: -22px;
+         color: white;
+         font-weight: bold;
+         font-size: 18px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+     }
+
+     .next { right: 0; border-radius: 3px 0 0 3px; }
+
+     .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+     .fade {
+         animation-name: fade;
+         animation-duration: 1.5s;
+     }
+
+     @keyframes fade {
+         from { opacity: 0.4; } 
+         to { opacity: 1; }
+     }
+
+     /* Estilos do indicador de slide */
+     .indicator-container {
+         position: absolute;
+         bottom: 10px;
+         width: 100%;
+         text-align: center;
+     }
+
+     .indicator-bar {
+         display: flex;
+         justify-content: center;
+         gap: 10px;
+     }
+
+     .indicator-dot {
+         width: 20px;
+         height: 5px;
+         background-color: #888;  /* Cinza para inativos */
+         transition: background-color 0.3s ease;
+         cursor: pointer;
+     }
+
+     .indicator-dot.active {
+         background-color: #f44336;  /* Cor para o slide ativo */
+     }
+    /*---------------------------darkside----------------------------*/
+
+    .carousel{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      width: 80%; /* Ajuste conforme necessário */
+      max-width: 1150px;
+      height: 750px;
+      position: relative;
+      border: solid 0px #ffffff;
+      padding-left: 20%;
+    }  
+
+    .casousel-item{
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right: 0;
+      padding: 25px 50px;
+      opacity:0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .arrow{
+      border: solid #24e2e5;
+      border-width: 0 6px 6px 0;
+      display: inline-block;
+      padding: 15px;
+
+    }
+
+    .prev{
+      top: 50%;
+      left:30px;
+      position: absolute;
+      transform: translateY(-50%) rotate(135deg);
+    }
+
+    .next{
+      top: 50%;
+      right: 30px;
+      position: absolute;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+
+    [id^="item"]{
+      display: none;
+    }
+
+    .item-1{
+      z-index: 2;
+      opacity: 1;
+      background: url(novo/emi.png);
+      background-size: cover;
+    }
+
+    .item-2{
+      background: url("novo/alice.jpg");
+      background-size: cover;
+    }
+    .item-3{
+      background: url("webp/acotar.webp");
+      background-size: cover;
+    }
+
+
+    *:target~.item-1{
+      opacity: 1;
+    }
+    #item-2:target~.item-2,
+    #item-3:target~.item-3{ 
+      z-index: 3;
+      opacity: 1;
+    }
+
+
+      /* Estilos para o rodapé */
+      footer {
+        background-color: #2b2626; /* Cor de fundo cinza escuro */
+        color: white; /* Cor do texto branca */
+        text-align: center; /* Centraliza o texto */
+        padding: 1.5rem; /* Preenchimento interno */
+        display: flex; /* Usa o modelo de layout flexbox */
+        justify-content: space-around; /* Espaça os itens no rodapé */
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+      }
+
+      /* Estilos para itens do rodapé */
+      footer .rodapé {
+        margin: 1rem; /* Margem ao redor do rodapé */
+      }
+
+      /* Estilos para listas no rodapé */
+      footer .rodapé ul {
+        list-style: none; /* Remove marcadores padrão das listas */
+      }
+
+      /* Estilos para itens da lista no rodapé */
+      footer .rodapé ul li {
+        margin-bottom: 0.5px; /* Margem abaixo de cada item */
+      }
+
+      /* Estilos para links no rodapé */
+      footer .rodapé ul li a {
+        color: rgb(255, 255, 255); /* Cor do texto do link */
+      }
+
+      /* Efeito de hover nos links do rodapé */
+      footer .rodapé ul li a:hover {
+        color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse (mantém a mesma cor) */
+      }
+
+      /* Estilos responsivos */
+      @media(max-width: 768px) { /* Para telas menores que 768px */
+        nav {
+            width: 100%; /* Largura total do menu */
+            position: relative; /* Posição relativa para se ajustar ao layout */
+        }
+
+        main {
+            margin-left: 0; /* Remove a margem à esquerda */
+        }
+      }
+
+      /* Estilos adicionais para o rodapé em telas menores */
+      footer {
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center; /* Centraliza os itens */
+      }
+
+    /* Responsividade para tablets */
+    @media (max-width: 1024px) {
+        .pesquisa {
+            width: 80%; /* Reduz a largura da barra de pesquisa */
+            margin: 0 auto; /* Centraliza a barra */
+        }
+        header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .logo {
+            width: 120px; /* Reduz a logo */
+        }
+        nav.menu-lateral {
+            width: 100%; /* Torna o menu lateral horizontal */
+            height: auto; /* Ajusta altura */
+            padding: 10px;
+        }
+        main {
+            margin-left: 0; /* Remove o espaçamento lateral */
+        }
+    }
+
+    /* Responsividade para smartphones */
+    @media (max-width: 768px) {
+        .pesquisa {
+            width: 100%; /* Ocupa a largura total */
+        }
+        .serch-txt {
+            height: 40px; /* Reduz a altura do campo */
+            font-size: 0.9rem; /* Ajusta o tamanho do texto */
+        }
+        .logo {
+            width: 100px;
+        }
+        nav.menu-lateral {
+            position: relative;
+            width: 100%;
+        }
+        ul li.item-menu {
+            margin-bottom: 15px; /* Reduz o espaço entre itens */
+        }
+    }
+
+    /* Responsividade para telas muito pequenas (celulares menores) */
+    @media (max-width: 480px) {
+        header {
+            font-size: 1.2rem; /* Reduz o tamanho da fonte */
+        }
+        .serch-txt {
+            width: 100%; /* Campo de texto ocupa largura total */
+        }
+        .serch-btn {
+            font-size: 0.9rem;
+        }
+        footer {
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8rem; /* Diminui o tamanho do texto */
+        }
+    }

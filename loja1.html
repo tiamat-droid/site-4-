@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="loja1.css">
+</head>
+
+<body>
+    <!-- Header com o menu -->
+    <header>
+        
+        <h1>DANTALION</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"">Início</a></li>
+                <li><a href="cadastro.html">Conta</a></li>
+                <li><a href="rascunho.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- os cards de livro -->
+    <h1 class="GÊNEROS-TITULO">LIVROS</h1>
+    <main class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+            <img src="LOJA/caso.jpg" alt="Produto 1">
+            <h2>SUSPENSE</h2>
+            <p>R$49,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 1')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 2 tão triste n usar o onclick para favoritar o produto e colocar no carrinho e sofrimento. Dor!!-->
+        <div class="product-card">
+            <img src="terror/acotar.jpg" alt="Produto 2">
+            <h2>FANTASIA</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 2')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+            <img src="LOJA/alice2.jpg" alt="Produto 3">
+            <h2>TERROR</h2>
+            <p>R$60,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 3')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 3')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card">
+            <img src="LOJA/cachorro.jpg" alt="Produto 4">
+            <h2>ROMANCE</h2>
+            <p>R$29,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 4')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 4')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card">
+            <img src="LOJA/cartomante.jpg" alt="Produto 5">
+            <h2>FICÇÃO</h2>
+            <p>R$35,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 5')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 5')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-card">
+            <img src="LOJA/como eu era.jpg"Produto 6">
+            <h2>DEPRESSÃO</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 6')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 6')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="product-card">
+            <img src="LOJA/coraline.jpg" alt="Produto 7">
+            <h2>FANTASIA</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 7')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 7')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="product-card">
+            <img src="LOJA/coreanobj.jpg" alt="Produto 8">
+            <h2>ROMANCE</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 8')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 8')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="product-card">
+            <img src="LOJA/deusecachorr.jpg" alt="Produto 9">
+            <h2>ROMANCE</h2>
+            <p>R$35,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="product-card">
+            <img src="LOJA/download.jpg" alt="Produto 9">
+            <h2>"INFANTIL"</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+
+
+        <!-- Card 11 -->
+        <div class="product-card">
+            <img src="LOJA/garotalago.jpg" alt="Produto 9">
+            <h2>SUSPENSE</h2>
+            <p>R$40,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="product-card">
+            <img src="LOJA/Helena.jpg" alt="Produto 9">
+            <h2>ROMANCE</h2>
+            <p>R$30,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+        <!-- Card 13 -->
+        <div class="product-card">
+            <img src="LOJA/homeGiz.jpg" alt="Produto 9">
+            <h2>TERRO PSICOLÓGICO</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+        <!-- Card 14 -->
+        <div class="product-card">
+            <img src="LOJA/hoover.jpg" alt="Produto 9">
+            <h2>ROMANCE</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="product-card">
+            <img src="LOJA/hooverarte.jpg" alt="Produto 9">
+            <h2>ROMANCE</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="product-card">
+            <img src="LOJA/ME.jpg" alt="Produto 9">
+            <h2>DISTOPIA</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 17 -->
+
+        <div class="product-card">
+            <img src="LOJA/mlkporco.jpg" alt="Produto 9">
+            <h2>SUSPENSE</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+
+        <!-- Card 18 -->
+
+        <div class="product-card">
+            <img src="LOJA/otaku3.jpg" alt="Produto 9">
+            <h2>TERROR</h2>
+            <p>R$59,99</p>
+            <button onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao Carrinho</button>
+            <button class="favorite-btn" onclick="adicionarAosFavoritos('Produto 9')">❤ Favoritar</button>
+        </div>
+    </main>
+    <!-- ----------agora um footer boladão-------------->
+    <footer>
+        <div class="interface">
+            <!-- Primeira linha do rodapé -->
+            <section class="line-footer1">
+                <h2>Saiba se seu livro já chegou</h2>
+                <p>Inscreva-se e receba notícias diárias sobre lançamentos de livros em seu e-mail</p>
+                <form action="">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </section>
+
+            <!-- Segunda linha do rodapé -->
+            <section class="line-footer2">
+                <!-- caixinha com o logotipo e descrição -->
+                <div class="box-line-footer">
+                    <img src="FONTES/logo.png" alt="Logotipo Dantalion">
+                    <p>A melhor loja de livros do mundo</p>
+                </div>
+
+                <!-- Links úteis -->
+                <div class="box-line-footer">
+                    <h3>Links Úteis</h3>
+                    <div class="links-footer">
+                        <a href="https://x.com/">TWITTER</a>
+                        <a href="https://www.google.com.br/">GOOGLE</a>
+                        <a href="https://pt-br.facebook.com/">FACEBOOK</a>
+                    </div>
+                </div>
+
+                <!-- Serviços -->
+                <div class="box-line-footer">
+                    <h3>Serviços</h3>
+                    <div class="links-footer">
+                        <a href="loja.html"">Loja</a>
+                    
+                    </div>
+                </div>
+
+                <!-- Suporte -->
+                <div class="box-line-footer">
+                    <h3>Suporte</h3>
+                    <div class="links-footer">
+                        <a href="#">Envie um Email</a>
+                        <a href="rascunho.html"">FAQ</a>
+                    </div>
+                </div>
+            </section>
+            <section class="line-footer3">
+                <p>&copy; 2024 Dantalion. Todos os direitos reservados.</p>
+            </section>
+        </div>
+    </footer>

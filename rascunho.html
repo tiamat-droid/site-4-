@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Perguntas Frequentes</title>
+  <link rel="stylesheet" href="rascunhos.css">
+</head>
+<body>
+  <header>
+    <h1>FAQ - Perguntas Frequentes</h1>
+  </header>
+
+  <main>
+    <section class="faq-container">
+      <div class="faq-item">
+        <h2 class="faq-question">O que é este site?</h2>
+        <p class="faq-answer">Este site é uma seção de perguntas frequentes para ajudar os usuários com informações úteis. E leia livros, Livros são legais. Leia.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-question">Como entro em contato com o suporte?</h2>
+        <p class="faq-answer">Você pode entrar em contato através do e-mail DANTALION@GMAIL.COM.com ou pelo telefone 40028922 .</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-question">Onde eu vejo o carrinho de compras e faço os pedidos?</h2>
+        <p class="faq-answer">Nosso site está em manutenção, logo iremos fazer com que o carrinho funcione. Desculpe o transtorno</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FAQ - Todos os direitos reservados.</p>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  });
+  </script>
+  <script src="inicio.js"></script>
+
+</body>
+</html>
